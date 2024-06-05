@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #111111;
+  color: rgb(253, 219, 117);
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 40px;  
+}
+
+#NameHeader{
+  font-size: xx-large;  
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.infoDiv{
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  box-shadow: 0px 4px 10px 0px rgba(112, 112, 112, 0.9);
+  background-color: rgba(253, 219, 117, 0.692);
+  color: #111111;
+  border-radius: 40px;  
+}
+
+.TextInfo{
+  margin: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in1 {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#xqz{
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#educationList li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+h2{
+  text-align: center;
+}
+
+
+.container2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;  
+}
+
+h3{
+  text-align: center;
+}
+
+.contactDiv{
+display: flex;
+justify-content: center;
+box-shadow: 0px 4px 10px 0px rgba(112, 112, 112, 0.9);
+background-color: rgba(253, 219, 117, 0.692);
+color: #111111;
+border-radius: 40px;
+margin: 5%;
+position: relative;
+}
+
+.ContactInfo{
+margin: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: 25px;
+}
+ 
+.footer-links a {
+  color: rgb(253, 219, 117);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+  
+.social-media a {
+  color: rgb(253, 219, 117);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-media a:hover{
+  color: red;
+}
+
+.social-media{
+  margin-top: 7px;
+}
+ 
+.createdBy{
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: small;
+}
+
+#copyright
+{
+  color: rgb(253, 219, 117);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+  background: rgb(253, 219, 117);
+  border-radius: 5px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.flip-card-front img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 50%;
+}
+
+.flip-card-inner {
+  position: centre;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgba(253, 219, 117, 0.692);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  font-size: larger;
+  border-radius: 50%;
+}
+
+.flip-card-back h1{
+  font-size: xx-large;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.flip-card-back h2{
+  font-size: large;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.icon{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
